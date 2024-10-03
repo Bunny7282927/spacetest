@@ -220,7 +220,7 @@ def execute_command(command):
             print("Usage: rm <file/directory>")
             return
         target = parts[1]
-        rm(target)
+        os.system(f"rm({target})")
     elif cmd == "mkdir":
         if len(parts) < 2:
             print("Usage: mkdir <directory>")
